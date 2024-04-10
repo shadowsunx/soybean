@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=2 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg configs/vssm/vssm_tiny_224.yaml --batch-size 64 --data-path /data/ldz/soy_316_64 --output /root/autodl-tmp/VMamba/cla
